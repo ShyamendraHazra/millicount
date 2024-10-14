@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'digital-7';
+    src: url('/assets/fonts/digital-7/digital-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'digital-7';
+    src: url('/assets/fonts/digital-7/digital-7\ \(italic\).ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'digital-7 mono';
+    src: url('/assets/fonts/digital-7/digital-7\ \(mono\).ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'digital-7 mono';
+    src: url('/assets/fonts/digital-7/digital-7\ \(mono\ italic\).ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+    font-family: 'digital-7 mono', monospace;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main_hud {
+    letter-spacing: 35px;
+    font-size: 15em;
+}
+
+
+@media screen and (max-width: 425px) {
+    
+    #main_hud {
+        font-size: 3em;
+        letter-spacing: 10px;
+    }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    
+    #main_hud {
+        font-size: 8em;
+        letter-spacing: 10px;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1335px) {
+    
+    #main_hud {
+        font-size: 10em;
+        letter-spacing: 10px;
+    }
+
+}
