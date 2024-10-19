@@ -3,6 +3,7 @@ const targetDate = new Date("November 4, 2024 23:59:59").getTime();
 function updateCountdown() {
     const now = Date.now(); // Use Date.now() for better performance
     const timeLeft = targetDate - now; // Calculate remaining time
+    const timeLeftMicro = timeLeft * 1000; 
 
     // Display remaining time in milliseconds
     document.getElementById("milicount").innerText = timeLeft;
